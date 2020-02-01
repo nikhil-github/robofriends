@@ -5,8 +5,6 @@ import Scroll from '../components/Scroll';
 import './App.css';
 
 
-
-
 class App extends React.Component {
     constructor() {
         super()
@@ -17,7 +15,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
+        fetch('http://jsonplaceholder.typicode.com/users')
           .then(response=> response.json())
           .then(users => {this.setState({ robots: users})});
       }
